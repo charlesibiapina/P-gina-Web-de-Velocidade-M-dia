@@ -1,2 +1,2 @@
-# P-gina-Web-de-Velocidade-M-dia
+#Pagina Web de Velocidade Media com calculadora
 Trabalho acadêmico
