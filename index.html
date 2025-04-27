@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FisQuiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<style>
+    body {
+      background: rgba(255, 255, 255, 0.575);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+
+<body>
+    <h1 align="left">Velocidade Média</h1>
+   
+
+    <section id=" conceito">
+        <h3> O que é Velocidade Média? </h3>
+        <p> A velocidade média (Vm) é uma das fórmulas mais básicas da Física e serve para calcular a média da
+            velocidade de um corpo em movimento. Ela é usada quando sabemos a distância percorrida (ΔS) e o tempo gasto
+            (ΔT) nesse percurso. 
+        </p>
+
+        <section id="formula">
+            <h3> Fórmula<br></h3>
+                <img src=" https://s2-g1.glbimg.com/j4SEoceYzguiR3nEPTFFQrsH4vQ=/0x0:747x275/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/f/U/zAYHoqS9AppzlLnJ449Q/formula1.png" style=" width: 300px;"
+            
+        </section>
+    </section>
+
+    <section id="calculadora">
+        <h2 align="left"> Calculadora de Velocidade Média </h2>
+        <h4> Use essa calculadora para determinar Velocidade Média dos exercicíos propostos:</h4>
+        <form id="calcForm">
+            <label for="distancia">Distância (em metros):</label>
+            <input type="number" id="distancia" required><br><br>
+
+            <label for="tempo">Tempo (em segundos):</label>
+            <input type="number" id="tempo" required><br><br>
+
+            <button type="button" onclick="calcularVelocidade()">Calcular Velocidade Média</button>
+        </form>
+        <h3>Resultado:</h3>
+        <p id="resultado"></p>
+    </section>
+
+    <section id="exercicios">
+        <h2> Teste seus conhecimentos sobre Velocidade Média </h2>
+        <div class="exercicios">
+            <h3> Exercício 01: </h3>
+            <p>
+                Um carro está viajando em uma estrada reta e plana. Ele percorre uma distância de 200 metros em 20 segundos. 
+                Considerando que o movimento é uniforme, ou seja, a velocidade do carro não sofre variação durante o trajeto, 
+                qual será a sua velocidade média?
+            </p>
+            <label><input type="radio" name="ex1" value="a"> a) 5 m/s</label><br>
+            <label><input type="radio" name="ex1" value="b"> b) 10 m/s</label><br>
+            <label><input type="radio" name="ex1" value="c"> c) 15 m/s</label><br>
+            <label><input type="radio" name="ex1" value="d"> d) 20 m/s</label><br>
+            <p id="resultadoex1"></p>
+        </div>
+        <div class="exercicios">
+            <h3> Exercício 02: </h3>
+            <p> 
+                Uma bicicleta está percorrendo um trajeto em uma pista de atletismo. Sabendo que ela percorre uma distância 
+                de 150 metros em 30 segundos, qual será a sua velocidade média durante este percurso? 
+                Lembre-se que a velocidade média é obtida pela razão entre a distância percorrida e o tempo gasto.
+            </p>
+            <label><input type="radio" name="ex2" value="a"> a) 3 m/s</label><br>
+            <label><input type="radio" name="ex2" value="b"> b) 5 m/s</label><br>
+            <label><input type="radio" name="ex2" value="c"> c) 7 m/s</label><br>
+            <label><input type="radio" name="ex2" value="d"> d) 10 m/s</label><br>
+            <p id="resultadoex2"></p>
+        </div>
+        <div class="exercicios">
+            <h3> Exercício 03: </h3>
+            <p> 
+                Imagine um trem de passageiros viajando por uma linha férrea. O trem percorre uma distância de 1.200 metros em 60 segundos. 
+                Sabendo que o movimento é uniforme, ou seja, a velocidade do trem não varia, qual é a sua velocidade média durante o percurso?
+            </p>
+            <label><input type="radio" name="ex3" value="a"> a) 15 m/s</label><br>
+            <label><input type="radio" name="ex3" value="b"> b) 20 m/s</label><br>
+            <label><input type="radio" name="ex3" value="c"> c) 25 m/s</label><br>
+            <label><input type="radio" name="ex3" value="d"> d) 30 m/s</label><br>
+            <p id="resultadoex3"></p>
+        </div>
+
+        <div class="exercicios">
+            <h3> Exercício 04: </h3>
+            <p>
+                Uma pessoa está caminhando por um parque. Durante o trajeto, ela percorre uma distância de 500 metros em 100 segundos. 
+                Sabendo que ela mantém um ritmo constante durante todo o percurso, qual será a sua velocidade média?
+            </p>
+            <label><input type="radio" name="ex4" value="a"> a) 4 m/s</label><br>
+            <label><input type="radio" name="ex4" value="b"> b) 5 m/s</label><br>
+            <label><input type="radio" name="ex4" value="c"> c) 6 m/s</label><br>
+            <label><input type="radio" name="ex4" value="d"> d) 7 m/s</label><br>
+            <p id="resultadoex4"></p> 
+        </div>
+
+        <div class="exercicios">
+            <h3> Exercício 05: </h3>
+            <p> 
+                Uma motocicleta está trafegando por uma via expressa e percorre uma distância de 300 metros em 15 segundos. 
+                Sabendo que a moto mantém uma velocidade constante ao longo do percurso, qual será a sua velocidade média?
+            </p>
+            <label><input type="radio" name="ex5" value="a"> a) 15 m/s</label><br>
+            <label><input type="radio" name="ex5" value="b"> b) 18 m/s</label><br>
+            <label><input type="radio" name="ex5" value="c"> c) 20 m/s</label><br>
+            <label><input type="radio" name="ex5" value="d"> d) 25 m/s</label><br>
+            <p id="resultadoex5"></p> 
+        </div>
+
+        <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+    </section>
+
+    <section>
+        <footer>
+            <p>
+                &copy; 2025 Charles Ibiapina Silva Braga. Todos os direitos reservados.
+            </p>
+        </footer>
+    </section>
+</body>
+
+</html>
